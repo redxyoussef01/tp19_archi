@@ -1,0 +1,122 @@
+﻿
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.8)
+
+2025-12-03T00:58:24.102+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] m.p.S.ServiceVoitureApplication          : Starting ServiceVoitureApplication v0.0.1-SNAPSHOT using Java 25 with PID 12888 (C:\Users\youra\Downloads\SERVICE-VOITURE\SERVICE-VOITURE\target\SERVICE-VOITURE-0.0.1-SNAPSHOT.jar started by Rimiru in C:\Users\youra\Downloads\SERVICE-VOITURE\SERVICE-VOITURE)
+2025-12-03T00:58:24.105+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] m.p.S.ServiceVoitureApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-12-03T00:58:25.028+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-03T00:58:25.131+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97 ms. Found 1 JPA repository interface.
+2025-12-03T00:58:25.339+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=38e590eb-fa1c-3edc-aeaf-0dcdcddfdb37
+2025-12-03T00:58:25.677+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2025-12-03T00:58:25.688+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-03T00:58:25.689+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-03T00:58:25.713+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-03T00:58:25.713+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1552 ms
+2025-12-03T00:58:25.927+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-03T00:58:26.098+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:1797474e-30a4-4d27-9a39-d98d40161645 user=SA
+2025-12-03T00:58:26.099+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-03T00:58:26.129+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-03T00:58:26.165+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-03T00:58:26.189+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-03T00:58:26.390+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-03T00:58:26.448+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-03T00:58:26.958+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-03T00:58:26.976+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-03T00:58:27.255+01:00  WARN 12888 --- [SERVICE-VOITURE] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-03T00:58:27.356+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'SERVICE-CLIENT' URL not provided. Will try picking an instance via load-balancing.
+2025-12-03T00:58:27.778+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-12-03T00:58:27.796+01:00  WARN 12888 --- [SERVICE-VOITURE] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-03T00:58:27.806+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-03T00:58:27.850+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-12-03T00:58:27.864+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-12-03T00:58:27.867+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-12-03T00:58:27.874+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-12-03T00:58:27.874+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-12-03T00:58:27.874+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-12-03T00:58:27.874+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-12-03T00:58:27.874+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-12-03T00:58:27.874+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-12-03T00:58:27.874+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-12-03T00:58:28.147+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-12-03T00:58:28.150+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-12-03T00:58:28.151+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-12-03T00:58:28.152+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1764719908152 with initial instances count: 2
+2025-12-03T00:58:28.154+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-VOITURE with eureka with status UP
+2025-12-03T00:58:28.154+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1764719908154, current=UP, previous=STARTING]
+2025-12-03T00:58:28.156+01:00  INFO 12888 --- [SERVICE-VOITURE] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-VOITURE/rimiru:SERVICE-VOITURE:8089: registering service...
+2025-12-03T00:58:28.173+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
+2025-12-03T00:58:28.174+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8089
+2025-12-03T00:58:28.192+01:00  INFO 12888 --- [SERVICE-VOITURE] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-VOITURE/rimiru:SERVICE-VOITURE:8089 - registration status: 204
+2025-12-03T00:58:28.197+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] m.p.S.ServiceVoitureApplication          : Started ServiceVoitureApplication in 4.625 seconds (process running for 5.012)
+2025-12-03T00:58:28.310+01:00  WARN 12888 --- [SERVICE-VOITURE] [           main] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: SERVICE-CLIENT
+2025-12-03T00:58:28.312+01:00  WARN 12888 --- [SERVICE-VOITURE] [           main] .s.c.o.l.FeignBlockingLoadBalancerClient : Load balancer does not contain an instance for the service SERVICE-CLIENT
+2025-12-03T00:58:28.319+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-03T00:58:28.339+01:00 ERROR 12888 --- [SERVICE-VOITURE] [           main] o.s.boot.SpringApplication               : Application run failed
+
+feign.FeignException$ServiceUnavailable: [503] during [GET] to [http://SERVICE-CLIENT/clients/2] [ClientService#clientById(Long)]: [Load balancer does not contain an instance for the service SERVICE-CLIENT]
+	at feign.FeignException.serverErrorStatus(FeignException.java:287) ~[feign-core-13.6.jar!/:na]
+	at feign.FeignException.errorStatus(FeignException.java:226) ~[feign-core-13.6.jar!/:na]
+	at feign.FeignException.errorStatus(FeignException.java:213) ~[feign-core-13.6.jar!/:na]
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:103) ~[feign-core-13.6.jar!/:na]
+	at feign.InvocationContext.decodeError(InvocationContext.java:133) ~[feign-core-13.6.jar!/:na]
+	at feign.InvocationContext.proceed(InvocationContext.java:80) ~[feign-core-13.6.jar!/:na]
+	at feign.ResponseHandler.handleResponse(ResponseHandler.java:69) ~[feign-core-13.6.jar!/:na]
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:109) ~[feign-core-13.6.jar!/:na]
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:53) ~[feign-core-13.6.jar!/:na]
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:104) ~[feign-core-13.6.jar!/:na]
+	at jdk.proxy2/jdk.proxy2.$Proxy162.clientById(Unknown Source) ~[na:na]
+	at ma.project.SERVICE_VOITURE.ServiceVoitureApplication.lambda$initialiserBaseH2$0(ServiceVoitureApplication.java:27) ~[!/:0.0.1-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788) ~[spring-boot-3.5.8.jar!/:3.5.8]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.14.jar!/:6.2.14]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.14.jar!/:6.2.14]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.14.jar!/:6.2.14]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796) ~[spring-boot-3.5.8.jar!/:3.5.8]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) ~[spring-boot-3.5.8.jar!/:3.5.8]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772) ~[spring-boot-3.5.8.jar!/:3.5.8]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:571) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) ~[spring-boot-3.5.8.jar!/:3.5.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) ~[spring-boot-3.5.8.jar!/:3.5.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.8.jar!/:3.5.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.8.jar!/:3.5.8]
+	at ma.project.SERVICE_VOITURE.ServiceVoitureApplication.main(ServiceVoitureApplication.java:21) ~[!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:106) ~[SERVICE-VOITURE-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64) ~[SERVICE-VOITURE-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40) ~[SERVICE-VOITURE-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+
+2025-12-03T00:58:28.343+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SERVICE-VOITURE with eureka with status DOWN
+2025-12-03T00:58:28.343+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1764719908343, current=DOWN, previous=UP]
+2025-12-03T00:58:28.344+01:00  INFO 12888 --- [SERVICE-VOITURE] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-VOITURE/rimiru:SERVICE-VOITURE:8089: registering service...
+2025-12-03T00:58:28.346+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-03T00:58:28.350+01:00  INFO 12888 --- [SERVICE-VOITURE] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-VOITURE/rimiru:SERVICE-VOITURE:8089 - registration status: 204
+2025-12-03T00:58:28.369+01:00  INFO 12888 --- [SERVICE-VOITURE] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-12-03T00:58:28.375+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-03T00:58:28.379+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-03T00:58:28.380+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-03T00:58:28.380+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-12-03T00:58:31.384+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-12-03T00:58:31.402+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-VOITURE/rimiru:SERVICE-VOITURE:8089 - deregister  status: 200
+2025-12-03T00:58:31.402+01:00  INFO 12888 --- [SERVICE-VOITURE] [           main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
